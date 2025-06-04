@@ -7,11 +7,11 @@ A Node.js Express API that integrates with [disposablemail.com](https://www.disp
 - Generate random disposable emails (`/getmail`)
 - Generate custom emails by passing `name` query (`/getmail?name=yourname`)
 - Check email inbox messages (`/chkmail?mail=your_encoded_email`)
-- Delete email by `mail` and email `id` (`/delete?mail=testSoumya@xxx.xxx&id=1`)
+- Delete email by `mail` and email `id` (`/delete?mail=ziddi@xxx.xxx&id=1`)
 - Fully serverless and deployable on **Vercel**
 
 ## Base URL : 
-**In my case base url is** - `https://temp-mail-peach.vercel.app`
+**In my case base url is** - `https://temp-mail-kappa.vercel.app/`
 
 ## Endpoints
 
@@ -20,12 +20,12 @@ A Node.js Express API that integrates with [disposablemail.com](https://www.disp
 Generates a new disposable email.
 
 #### Optional Query Parameters:
-- `name`: Custom email name to register (e.g., `/getmail?name=soumyatest`)
+- `name`: Custom email name to register (e.g., `/getmail?name=ziddi`)
 
 Returns JSON:
 ```json
 {
-  "email": "soumyatest@deliverydaily.org",
+  "email": "ziddibeatz@deliverydaily.org",
   "password": null,
   "session": "your-session-id"
 }
@@ -38,7 +38,7 @@ Returns JSON:
 Checks inbox for a generated email.
 
 #### Required Query Parameters:
-- `mail`: Email name encoded (e.g., `soumyatest%40deliverydaily.org`)
+- `mail`: Email name encoded (e.g., `ziddibeatz%40deliverydaily.org`)
 
 Returns JSON inbox data from DisposableMail.
 
@@ -48,7 +48,7 @@ Returns JSON inbox data from DisposableMail.
 Delete a inboxed email for a specific mail.
 
 #### Required Query Parameters:
-- `mail`: Email name encoded (e.g., `soumyatest%40deliverydaily.org`)
+- `mail`: Email name encoded (e.g., `ziddibeatz%40deliverydaily.org`)
 - `id` : email id (e.g., `1`)
 
 return success or failed response.
