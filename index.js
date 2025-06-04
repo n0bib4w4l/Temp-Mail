@@ -1,9 +1,4 @@
-//index.js
-/*
-Temp mail api using https://www.disposablemail.com
-credit : https://github.com/Soumyadeep765
-Repo : https://github.com/Soumyadeep765/Temp-mail/
-*/
+
 
 const express = require('express');
 const axios = require('axios');
@@ -185,7 +180,7 @@ app.get('/', (req, res) => {
         <li><strong>GET <code>/delete?mail=encoded_mail&id=msgid</code></strong> – Delete a specific mail by ID</li>
       </ul>
       <h4>Example:</h4>
-      <pre><code>/getmail?name=soumyaTest</code></pre>
+      <pre><code>/getmail?name=zidditest</code></pre>
     </body>
     </html>
   `);
